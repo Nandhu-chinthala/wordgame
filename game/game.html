@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Combination Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="outer">
+
+            <nav class="navbar">
+                <div class="logo">Word Game</div>
+                <ul class="nav-links">
+                    <li class="nav-links-b"><a href="#">About</a></li>
+                    <li class="nav-links-b"><a href="">Contact</a></li>
+                    <li class="nav-links-b"><a href="">Sign In</a></li>
+                </ul>
+            </nav>
+
+        
+            <main class="game-container">
+                <div class="level-selector">
+                    <label for="level">Select Level:</label>
+                    <select id="level">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+            
+                <div class="game-box">
+                    <h2>Word Combination Game</h2>
+                    <p>Arrange the letters to form a valid word:</p>
+                    <h3 id="shuffled-word">---</h3>
+                    <input type="text" id="user-input" placeholder="Enter your word">
+                    <button onclick="checkWord()">Check</button>
+                    <button onclick="nextWord()">Next Word</button>
+                    <p id="result"></p>
+                </div>
+            </main>
+            <script src="game.js"></script>
+            <footer class="footer">
+                <p>Contact: wordgame@gmail.com</p>
+                <p>© 2025 Word Game. All rights reserved.</p>
+            </footer>
+    </div>
+
+</body>
+</html>
